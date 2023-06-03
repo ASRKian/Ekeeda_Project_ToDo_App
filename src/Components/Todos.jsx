@@ -5,7 +5,6 @@ export default function Todos() {
   const dispatch = useDispatch();
   const state = useSelector(state => state);
   const compId = (index) => {
-    console.log(index);
     dispatch(deleteToDo(index));
   }
   return (
